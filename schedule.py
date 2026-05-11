@@ -8,4 +8,6 @@ klass = {
 
 
 tabl = pd.DataFrame(klass)
-print(tabl.melt())
+tabl = tabl.melt()
+tabl = tabl.rename(columns={"variable": "bukva", "value": "name"})
+print(tabl)
